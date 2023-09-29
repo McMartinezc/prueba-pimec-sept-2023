@@ -1,5 +1,9 @@
 Error 1:
+No se ha implementado una regla CSS para el estado de hover. Esto significa que cuando el mouse pasa sobre los enlaces de navegación, no hay ningún cambio visual para indicar la interactividad. 
 
 Error 2:
+La propiedad :root al establecer el tamaño de la fuente en 10px, afecta al tamaño de la fuente de todo el documento html poniendo el size a 10px, y se ve afectada la legibilidad del contenido. Específicamente, puede causar que el texto sea demasiado pequeño para los usuarios. Habría que establecer el tamaño de la fuente a 16px, para que el texto de todo el documento html sea mínimamente de 16px.
+En el código proporcionado, #navigation__link utiliza un símbolo de # que indica una selección por ID, pero navigation__link está definido como una clase, por lo que deberías usar el punto (.) para seleccionar clases.
 
 Error 3: 
+align-content: está utilizando esta propiedad que alinea las líneas de elementos secundarios cuando hay espacio adicional en el eje transversal del contenedor padre en vez de usar justyfy-content que alinea los elementos secundarios a lo largo del eje principal del contenedor en este caso el eje X. 
